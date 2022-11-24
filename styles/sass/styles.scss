@@ -1,0 +1,7 @@
+@use './snippet';
+@use './variables' as *;
+
+body {
+    color: $primary-color;
+    font-family: $body-ff;
+}
