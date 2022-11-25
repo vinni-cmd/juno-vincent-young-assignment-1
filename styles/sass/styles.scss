@@ -51,6 +51,10 @@ button,
     padding: 0.5em 1.35em;
 }
 
+.new-line {
+    display: block;
+}
+
 // header
 
 // sin ce there are multiple navs in differecnt sections
@@ -111,6 +115,7 @@ header {
             gap: 30px;
                 .about-image {
                     flex-basis: 30%;
+                    // along with p styling, below, this ensures a similar height for both flex children at different screen resolutions
                         img {
                             height: 100%;
                             max-height: 360px;
@@ -143,4 +148,19 @@ header {
 .gallery {
     background-color: $light-bg-color;
     padding:  $section-padding;
+        h2 {
+            font-family: $primary-ff;
+            font-size: $section-h-fs;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        ul {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+}
+
+.spotlight {
+    
 }
