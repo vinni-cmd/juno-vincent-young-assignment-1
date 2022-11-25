@@ -1,5 +1,4 @@
 @use './snippet';
-@use './personal-resets';
 @use './variables' as *;
 
 // setting some document defaults
@@ -14,7 +13,7 @@ html {
 
 .wrapper {
     width: 90%;
-    max-width: 1080px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -36,4 +35,103 @@ img {
     display: block;
 }
 
-// 
+p {
+    font-size: 2rem;
+    line-height: 1.45;
+}
+
+button,
+.link-button {
+    font-family: $secondary-ff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.611;
+    display: inline-block;
+    padding: 0.5em 1.35em;
+}
+
+// header
+
+// sin ce there are multiple navs in differecnt sections
+nav {
+    font-family: $secondary-ff;
+    font-size: 2.2rem;
+    line-height: 1.318;
+    text-transform: uppercase;
+}
+
+header {
+    min-height: 100vh;
+    background-image: url(../../assets/image-1.jpg);
+    background-position: 27.5% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 2em;
+    // to control positioning of .social
+    position: relative;
+        .wrapper {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+                h1 {
+                    font-family: $primary-ff;
+                    font-size: 12rem;
+                    text-align: right;
+                    text-transform: uppercase;
+                    line-height: 0.975;
+                }
+                nav {
+                    flex-basis: 50%;
+                }
+                    .menu {
+                        display: flex;
+                        gap: 1.2em;
+                    }
+                    .social {
+                        position: absolute;
+                        bottom: 4%;
+                        right: 4%;
+                    }
+        }
+        // general header style
+        a {
+            color: inherit;
+        }   
+}
+
+// main
+
+.about {
+    background-color: $secondary-color;
+    padding:  $section-padding;
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+                .about-image {
+                    flex-basis: 40%;
+                }
+                .about-text {
+                    flex-basis: 60%;
+                }
+                h2 {
+                    font-family: $primary-ff;
+                    font-size: $section-h-fs;
+                    text-transform: uppercase;
+                    margin: 0;
+                }
+                p {
+                    margin-top: 0;
+                }
+                a {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                }
+        }
+}
+
+.gallery {
+    background-color: $light-bg-color;
+    padding:  $section-padding;
+}

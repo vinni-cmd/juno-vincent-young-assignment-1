@@ -234,7 +234,7 @@ html {
 
 .wrapper {
   width: 90%;
-  max-width: 1080px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -252,4 +252,114 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 1.45;
+}
+
+button,
+.link-button {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.611;
+  display: inline-block;
+  padding: 0.5em 1.35em;
+}
+
+nav {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.2rem;
+  line-height: 1.318;
+  text-transform: uppercase;
+}
+
+header {
+  min-height: 100vh;
+  background-image: url(../../assets/image-1.jpg);
+  background-position: 27.5% 75%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 2em;
+  position: relative;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .wrapper h1 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 12rem;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 0.975;
+}
+header .wrapper nav {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+header .wrapper .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2em;
+}
+header .wrapper .social {
+  position: absolute;
+  bottom: 4%;
+  right: 4%;
+}
+header a {
+  color: inherit;
+}
+
+.about {
+  background-color: #152d2d;
+  padding: 50px 0;
+}
+.about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+.about .wrapper .about-image {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.about .wrapper .about-text {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+.about .wrapper h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5.1rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+.about .wrapper p {
+  margin-top: 0;
+}
+.about .wrapper a {
+  background-color: #fcfcfc;
+  color: #152d2d;
+}
+
+.gallery {
+  background-color: #c3d3cb;
+  padding: 50px 0;
 }
