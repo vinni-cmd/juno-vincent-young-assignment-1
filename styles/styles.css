@@ -335,15 +335,21 @@ header a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+  gap: 30px;
 }
 .about .wrapper .about-image {
-  -ms-flex-preferred-size: 40%;
-      flex-basis: 40%;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+}
+.about .wrapper .about-image img {
+  height: 100%;
+  max-height: 360px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .wrapper .about-text {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
 }
 .about .wrapper h2 {
   font-family: "Fredericka the Great", cursive;
@@ -353,6 +359,10 @@ header a {
 }
 .about .wrapper p {
   margin-top: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 8;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .about .wrapper a {
   background-color: #fcfcfc;

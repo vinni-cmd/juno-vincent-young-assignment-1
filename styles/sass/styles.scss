@@ -107,13 +107,18 @@ header {
     padding:  $section-padding;
         .wrapper {
             display: flex;
-            justify-content: space-between;
-            gap: 20px;
+            justify-content:space-between;
+            gap: 30px;
                 .about-image {
-                    flex-basis: 40%;
+                    flex-basis: 30%;
+                        img {
+                            height: 100%;
+                            max-height: 360px;
+                            object-fit: cover;
+                        }
                 }
                 .about-text {
-                    flex-basis: 60%;
+                    flex-basis: 70%;
                 }
                 h2 {
                     font-family: $primary-ff;
@@ -123,6 +128,10 @@ header {
                 }
                 p {
                     margin-top: 0;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 8;
+                    -webkit-box-orient:vertical;
+                    overflow: hidden;
                 }
                 a {
                     background-color: $primary-color;
