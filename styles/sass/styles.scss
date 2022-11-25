@@ -153,6 +153,7 @@ header {
             font-size: $section-h-fs;
             text-transform: uppercase;
             text-align: center;
+            margin-top: 0;
         }
         ul {
             display: flex;
@@ -162,5 +163,27 @@ header {
 }
 
 .spotlight {
-    
+    background-color: $secondary-color;
+    // design file suggests less padding but I want to introduce some consistent spacing across sections
+    padding:  $section-padding;
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            // align-items: center;
+                a {
+                    color: $primary-color;
+                    font-family: $secondary-ff;
+                    font-size: 3.5rem;
+                    text-transform: uppercase;
+                    text-align: center;
+                        i {
+                            display: block;
+                        }
+                }
+                a:not(a:first-child) {
+                    i {
+                        padding-bottom: 0.5em;
+                    }
+                }
+        }
 }

@@ -382,6 +382,7 @@ header a {
   font-size: 5.1rem;
   text-transform: uppercase;
   text-align: center;
+  margin-top: 0;
 }
 .gallery ul {
   display: -webkit-box;
@@ -391,4 +392,30 @@ header a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 30px;
+}
+
+.spotlight {
+  background-color: #152d2d;
+  padding: 50px 0;
+}
+.spotlight ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.spotlight ul a {
+  color: #fcfcfc;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+.spotlight ul a i {
+  display: block;
+}
+.spotlight ul a:not(a:first-child) i {
+  padding-bottom: 0.5em;
 }
