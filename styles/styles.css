@@ -226,7 +226,30 @@ html {
   overflow: hidden;
 }
 
-body {
-  color: #fcfcfc;
+html {
   font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+  color: #fcfcfc;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

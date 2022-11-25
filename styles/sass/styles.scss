@@ -1,7 +1,39 @@
 @use './snippet';
+@use './personal-resets';
 @use './variables' as *;
 
-body {
-    color: $primary-color;
+// setting some document defaults
+
+html {
     font-family: $body-ff;
+    font-size: 62.5%;
+    color: $primary-color;
 }
+
+// To achieve full bleed design
+
+.wrapper {
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+// element stripping to remove default styling
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// 

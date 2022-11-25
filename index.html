@@ -17,34 +17,125 @@
 
 <body>
 	<header>
-		<!-- Put the h1 here for better sr experience -->
-		<h1>animal refuge</h1>
-		<nav>
-			<ul class="menu">
-				<li><a href="#">home</a></li>
-				<li><a href="#">about</a></li>
-				<li><a href="#">blog</a></li>
-				<li><a href="#">contact</a></li>
-			</ul>
-			<ul class="social">
-				<li><a href="#" aria-label="Navigate to Animal Refuge's Instagram page">
-						<i aria-hidden class="fa-brands fa-instagram"></i>
-					</a></li>
-				<li><a href="#" aria-label="Navigate to Animal Refuge's Facebook page">
-						<i aria-hidden class="fa-brands fa-facebook-f"></i>
-					</a></li>
-				<li><a href="#" aria-label="Navigate to Animal Refuge's Snapchat page">
-						<i aria-hidden class="fa-brands fa-snapchat"></i>
-					</a></li>
-				<li><a href="#" aria-label="Navigate to Animal Refuge's Twitter page">
-						<i aria-hidden class="fa-brands fa-twitter"></i>
-					</a></li>
-			</ul>
-		</nav>
+		<div class="wrapper">
+			<!-- Put the h1 here for better sr experience -->
+			<h1>animal refuge</h1>
+			<nav>
+				<ul class="menu">
+					<li>
+						<a href="#">home</a>
+					</li>
+					<li>
+						<a href="#">about</a>
+					</li>
+					<li>
+						<a href="#">blog</a>
+					</li>
+					<li>
+						<a href="#">contact</a>
+					</li>
+				</ul>
+				<ul class="social">
+					<li><a href="#" aria-label="Navigate to Animal Refuge's Instagram page">
+							<i aria-hidden class="fa-brands fa-instagram"></i>
+						</a>
+					</li>
+					<li><a href="#" aria-label="Navigate to Animal Refuge's Facebook page">
+							<i aria-hidden class="fa-brands fa-facebook-f"></i>
+						</a>
+					</li>
+					<li><a href="#" aria-label="Navigate to Animal Refuge's Snapchat page">
+							<i aria-hidden class="fa-brands fa-snapchat"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" aria-label="Navigate to Animal Refuge's Twitter page">
+							<i aria-hidden class="fa-brands fa-twitter"></i>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</header>
 	<main>
-
+		<section class="about">
+			<div class="wrapper">
+				<div class="about-image">
+					<img src="./assets/image-6.jpg"
+						alt="Suzie, a tiger striped rescue cat from the refuge, lounging on a red persian rug">
+				</div>
+				<div class="about-text">
+					<h2>suzie's story</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus ullam eos, accusantium fugit
+						quisquam ab odio pariatur, explicabo quos beatae ducimus earum praesentium facere, aut obcaecati
+						sunt voluptate laudantium autem eius. Explicabo quam ex temporibus iste accusamus perferendis,
+						nam
+						accusantium hic consectetur, adipisci repudiandae voluptatem? Molestiae, culpa id, eaque quia
+						placeat quasi iusto doloremque eum odit expedita consequatur deserunt temporibus fugiat veniam
+						sint
+						nemo vel enim aliquid esse quis? Tenetur!</p>
+					<a href="#" class="link-button">read more</a>
+				</div>
+			</div>
+		</section>
+		<section class="gallery">
+			<div class="wrapper">
+				<h2>some of our friends</h2>
+				<ul>
+					<li>
+						<img src="./assets/image-5.jpg"
+							alt="A green crested cameleon, from the refuge, clinging on a branch">
+					</li>
+					<li>
+						<img src="./assets/image-4.jpg"
+							alt="A white rescued merino sheep roaming the pastures with their friends">
+					</li>
+					<li>
+						<img src="./assets/image-3.jpg"
+							alt="A turquoise and yellow parrot eating a snack on a thin branch at the refuge">
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="spotlight">
+			<div class="wrapper">
+				<ul>
+					<a href="#">
+						<i class="fa-solid fa-paw" aria-hidden="true"></i>
+						<span>animal<span class="new-line">spotlight</span></span>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-calendar-check" aria-hidden="true"></i>
+						<span>events</span>
+					</a>
+					<a href="#">
+						<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i>
+						<span>merch</span>
+					</a>
+				</ul>
+			</div>
+		</section>
+		<section class="blog">
+			<div class="wrapper">
+				<!-- based on the mobile design file I'd say these images should be background images. They also don't add anything to the already descriptive blog titles -->
+				<div class="blog blog-1">
+					<h2>fascinating facts about zebras</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed similique quae impedit sapiente
+						reiciendis, non ipsum rem mollitia nobis error omnis earum enim, tempora totam asperiores
+						tempore eligendi autem dolorum id aliquam blanditiis, quisquam aut?</p>
+					<a href="#">read more</a>
+				</div>
+				<div class="blog blog-2">
+					<h2>the bond between animals and humans</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet sed similique natus. Quisquam
+						iusto nostrum, corrupti voluptatem nulla incidunt ab tempora repellendus voluptas fuga quidem
+						perspiciatis possimus suscipit vitae, est deserunt. Odit hic natus rem.</p>
+					<a href="#">readmore</a>
+				</div>
+			</div>
+		</section>
 	</main>
+	<!-- still need to add footer -->
 </body>
 
 </html>
