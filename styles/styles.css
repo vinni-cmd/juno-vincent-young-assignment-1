@@ -374,6 +374,7 @@ header a {
 }
 
 .gallery {
+  color: #152d2d;
   background-color: #c3d3cb;
   padding: 50px 0;
 }
@@ -419,3 +420,126 @@ header a {
 .spotlight ul a:not(a:first-child) i {
   padding-bottom: 0.5em;
 }
+
+.blog {
+  color: #fcfcfc;
+  background-color: #000000;
+}
+.blog article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+}
+.blog article .blog-image {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.blog article .blog-image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blog article .blog-text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blog article .wrapper {
+  padding: 8em;
+}
+.blog article .wrapper h2 {
+  font-family: "Fredericka the Great", cursive;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+.blog article .wrapper p {
+  margin-top: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.blog article .wrapper a {
+  color: #fcfcfc;
+  background-color: #152d2d;
+  margin-top: 2em;
+}
+.blog .blog-1 {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media (max-width: 480px) {
+  .about .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about .wrapper img {
+    width: 100%;
+  }
+  .about .wrapper .about-text a {
+    position: relative;
+    left: 25%;
+    right: 25%;
+  }
+  .gallery ul {
+    gap: 10px;
+  }
+  .gallery ul li:last-child {
+    display: none;
+  }
+  .spotlight ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+  .spotlight ul i {
+    font-size: 6rem;
+    padding-bottom: 0.2em;
+  }
+  .blog {
+    color: #152d2d;
+    background-color: #fcfcfc;
+  }
+  .blog article {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog article .blog-text {
+    padding: 50px 0;
+    text-align: center;
+  }
+  .blog article .blog-text .wrapper {
+    padding: 0;
+  }
+  .blog article .blog-text .wrapper p {
+    -webkit-line-clamp: 7;
+  }
+  .blog .blog-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */

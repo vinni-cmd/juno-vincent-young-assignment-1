@@ -146,6 +146,7 @@ header {
 }
 
 .gallery {
+    color: $secondary-color;
     background-color: $light-bg-color;
     padding:  $section-padding;
         h2 {
@@ -187,3 +188,149 @@ header {
                 }
         }
 }
+
+// .blog {
+//     background-color: $dark-bg-color;
+//     // move padding onto blog
+//     padding:  $section-padding;
+//         article {
+//             display: flex;
+//             justify-content: space-between;
+//             gap: 50px;
+//                 & > * {
+//                     flex-basis: 50%;
+//                 } 
+//         }
+//             .blog-1 .blog-image {
+//                 position: relative;
+//                 top: -50px;
+//                 right: 0;
+//             }
+//             .blog-2 .blog-image {
+//                 position: relative;
+//                 inset: 50% 50% 0 0;
+//             }
+//             .blog-1 {
+//                 flex-direction: row-reverse;
+//             }
+// }
+
+.blog {
+    color: $primary-color;
+    background-color: $dark-bg-color;
+    article {
+        display: flex;
+        height: 50%;
+            .blog-image {
+                flex: 0 0 50%;
+                img {
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .blog-text {
+                flex: 0 0 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .wrapper {
+                padding: 8em;
+                    h2 {
+                        font-family: $primary-ff;
+                        font-size: 3.5rem;
+                        text-transform: uppercase;
+                    }
+                    p {
+                        margin-top: 0;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 6;
+                        -webkit-box-orient:vertical;
+                        overflow: hidden;
+                    }
+                    a {
+                        color: $primary-color;
+                        background-color: $secondary-color;
+                        margin-top: 2em;
+                    }
+            }
+    }
+    .blog-1 {
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media (max-width: 480px) {
+    // mobile blog section
+
+    header {
+        
+    }
+
+    .about {
+        .wrapper {
+            flex-direction: column;
+            img {
+                width: 100%;
+            }
+            .about-text {
+                a {
+                    position: relative;
+                    left: 25%;
+                    right: 25%;
+                }
+            }
+        }
+    }
+
+    .gallery {
+        ul {
+            gap: 10px;
+        }
+        ul li:last-child {
+            display: none;
+        }
+    }
+
+    .spotlight {
+        ul {
+            flex-direction: column;
+            gap: 30px;
+            i {
+                font-size: 6rem;
+                padding-bottom: 0.2em;
+            }
+        }
+    }
+
+    .blog {
+        color: $secondary-color;
+        background-color: $primary-color;
+        article {
+            flex-direction: column;
+                .blog-text {
+                    padding: $section-padding;
+                    text-align: center;
+                    .wrapper {
+                        padding: 0;
+                        p {
+                            -webkit-line-clamp: 7;
+                        }
+                    }
+                }
+            }
+            .blog-1 {
+                flex-direction: column;
+            }
+        }
+}
+
+
+/* Portrait tablet and small desktops */
+// @media (max-width: 940px) {
+// }
+
+/* Landscape phone to portrait tablet */
+// @media (max-width: 768px) {
+// }
