@@ -57,7 +57,6 @@ button,
 
 // header
 
-// sin ce there are multiple navs in differecnt sections
 nav {
     font-family: $secondary-ff;
     font-size: 2.2rem;
@@ -80,7 +79,8 @@ header {
             justify-content: space-between;
                 h1 {
                     font-family: $primary-ff;
-                    font-size: 12rem;
+                    // From CSS Tricks and MDN
+                    font-size: clamp(6rem,10vw,12rem);
                     text-align: right;
                     text-transform: uppercase;
                     line-height: 0.975;
@@ -91,11 +91,14 @@ header {
                     .menu {
                         display: flex;
                         gap: 1.2em;
+                        position: fixed;
+                        background-color: rgba(0, 0, 0, 0.4);
                     }
                     .social {
-                        position: absolute;
+                        position: fixed;
                         bottom: 4%;
                         right: 4%;
+                        background-color: rgba(0, 0, 0, 0.1);
                     }
         }
         // general header style
@@ -132,6 +135,7 @@ header {
                     margin: 0;
                 }
                 p {
+                    // From Kevin Powell
                     margin-top: 0;
                     display: -webkit-box;
                     -webkit-line-clamp: 8;
@@ -170,7 +174,6 @@ header {
         ul {
             display: flex;
             justify-content: space-evenly;
-            // align-items: center;
                 a {
                     color: $primary-color;
                     font-family: $secondary-ff;
@@ -188,32 +191,6 @@ header {
                 }
         }
 }
-
-// .blog {
-//     background-color: $dark-bg-color;
-//     // move padding onto blog
-//     padding:  $section-padding;
-//         article {
-//             display: flex;
-//             justify-content: space-between;
-//             gap: 50px;
-//                 & > * {
-//                     flex-basis: 50%;
-//                 } 
-//         }
-//             .blog-1 .blog-image {
-//                 position: relative;
-//                 top: -50px;
-//                 right: 0;
-//             }
-//             .blog-2 .blog-image {
-//                 position: relative;
-//                 inset: 50% 50% 0 0;
-//             }
-//             .blog-1 {
-//                 flex-direction: row-reverse;
-//             }
-// }
 
 .blog {
     color: $primary-color;
@@ -325,12 +302,3 @@ header {
             }
         }
 }
-
-
-/* Portrait tablet and small desktops */
-// @media (max-width: 940px) {
-// }
-
-/* Landscape phone to portrait tablet */
-// @media (max-width: 768px) {
-// }

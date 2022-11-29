@@ -304,7 +304,7 @@ header .wrapper {
 }
 header .wrapper h1 {
   font-family: "Fredericka the Great", cursive;
-  font-size: 12rem;
+  font-size: clamp(6rem, 10vw, 12rem);
   text-align: right;
   text-transform: uppercase;
   line-height: 0.975;
@@ -318,11 +318,14 @@ header .wrapper .menu {
   display: -ms-flexbox;
   display: flex;
   gap: 1.2em;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 header .wrapper .social {
-  position: absolute;
+  position: fixed;
   bottom: 4%;
   right: 4%;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 header a {
   color: inherit;
@@ -541,5 +544,3 @@ header a {
             flex-direction: column;
   }
 }
-/* Portrait tablet and small desktops */
-/* Landscape phone to portrait tablet */
